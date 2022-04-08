@@ -15,7 +15,10 @@ const DocumentationPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={frontmatter.title} />
+      <SEO 
+        title={frontmatter.title} 
+        date={frontmatter.last_updated} 
+      />
       <div className="usa-layout-docs usa-section">
         <div className="grid-container">
           <div className="grid-row grid-gap">
@@ -43,6 +46,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         sidenav
+        last_updated
       }
     }
   }

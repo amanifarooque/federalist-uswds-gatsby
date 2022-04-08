@@ -12,7 +12,9 @@ const Blog = ({ data, pageContext }) => {
   }));
   return (
     <Layout>
-      <SEO title="Blog" />
+      <SEO 
+        title="Blog" 
+      />
       <div
         id="blog"
         className="bg-primary-darker usa-content font-serif-lg padding-y-6"

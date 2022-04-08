@@ -13,7 +13,10 @@ const BlogPost = ({ data }) => {
   const { frontmatter, html } = markdownRemark;
   return (
     <Layout>
-      <SEO title={frontmatter.title} />
+      <SEO 
+        title={frontmatter.title} 
+        date={frontmatter.date} 
+      />
       <div className="usa-layout-docs usa-section">
         <div className="grid-container">
           <div className="grid-row grid-gap">
